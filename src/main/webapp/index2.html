@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECOND PAGE</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script2.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="register2" onsubmit="return validateForm()">
+            <div class="row">
+                <label for="i-name">HSC Institution Name </label>
+                <input type="text" id="i-name"  name="instname" class="input" placeholder="Institute Name">
+            </div>
+            <p id="ui"></p>
+
+            <div class="row">
+                <label for="HSC">HSC Board</label>
+                <select id="HSC" name="board">
+                    <option value="H-board">HSC board</option>
+                    <option value="CBSC">CBSC</option>
+                    <option value="ICSC">ICSC</option>
+                    <option value="s-board">State Board</option>
+                </select>
+
+            </div>
+            <p id="Hsc-board"></p>
+            <div class="row">
+                <label for="HSC Score">HSC Score</label>
+                <input type="text" id="hsc-score" name="score" placeholder="Score in %">
+            </div>
+            <p id="Hsc-sc"></p>
+
+            <div class="row">
+                <label for="i-name">SSC Institution Name </label>
+                <input type="text" id="ssc-i-name" name="sscinstname" class="input" placeholder="Institute Name">
+            </div> 
+            <p id="SSC-i-name"></p>
+
+            <div class="row">
+                <label for="SSC">SSC Board</label>
+                <select id="SSC-board" name="sscboard">
+                    <option value="S-board">SSC board</option>
+                    <option value="CBSC">CBSC</option>
+                    <option value="ICSC">ICSC</option>
+                    <option value="s-board">State Board</option>
+                </select>
+            </div>
+            <p id="ssc-board"></p>
+
+            <div class="row">
+                SSC Score
+                <input type="text" id="ssc-score" name="sscscore" placeholder="Score in %">
+            </div>
+            <p id="ssc-sc"></p>
+
+            <div class="row">
+                Currently Pursuing
+                <input type="text" name="currentpur" id="cur-name">
+            </div>
+            <p id="Cur-name"></p>
+
+            <div class="row">
+                Current educational institution name
+                <input type="text"  name="currentedu" id="cur-i-name">
+            </div>
+            <p id="Cur-i-name"></p>
+
+            <div class="row">
+                Overall percentage
+                <input type="text" name="overallper" id="percentage">
+            </div>
+            <p id="Percentage"></p>
+
+            <div class="row">
+                Current backlogs if any
+                <input type="number" name="currentback" id="backlog">
+            </div>
+            <p id="Backlog"></p>
+            <div></div>
+           
+           
+                  <div id="img">
+                <label for="p-img">Recent passport size photograph </label> 
+                 <input type="image" id="p-img" name="image">
+                <input type="file" accept="image" name="image"id="p-img"><br>
+                <p>*image size less than 4MB</p>
+            </div> 
+             
+         
+            
+            <center>
+                
+                    <a href="index.html">Back</a>
+               <input type="submit" value="submit" name="submit">
+
+                   <a href="index3.html"> Next</a>
+              
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>

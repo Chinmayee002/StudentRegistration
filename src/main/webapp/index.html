@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FIRST PAGE</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+</head>
+
+<body>
+   <div class="container">
+
+      <form action="register" onsubmit="return validateForm()">
+
+         <div class="first">
+            <label for="name">Name* </label><br>
+            <input type="text" id="name" class="input" name="firstname" placeholder="First" onchange="validateFirstName()">
+            <!-- <p id="username" class="uname"></p> -->
+            <input type="text" id="name1" name="lastname" class="input" placeholder="Last" onchange="validateLastName()">
+            <p id="Username-1" class="uname"></p>
+         </div>
+         <div class="second">
+            <label for="dob">Date of Birth*</label><br>
+            <input type="date" id="dob" class="input" name="dob" placeholder="MM/DD/YYYY" onchange="ValidateDateOfBirth()">
+            <p id="u-dob"></p>
+         </div>
+         <div class="third">
+            <label for="mail">Email*</label><br>
+            <input type="email" id="mail" name="email" class="input" onchange="ValidateEmail()">
+            <p id="Email" class=""></p>
+         </div>
+         <div class="fourth">
+            <label for="f-name">Father's Name*</label><br>
+            <input type="text" id="f-name" name="fatherFname" class="input" placeholder="First">
+            <input type="text" id="f-lastname" class="input" name="fatherLname" placeholder="Last"><br>
+            <span id="F-name" class="u-fname"></span>
+         </div>
+         <div class="fifth">
+            <label for="m-name">Mother's Name*</label><br>
+            <input type="text" id="m-name" class="input" name="motherFname" placeholder="First">
+            <input type="text" id="m-lastname" class="input" name="motherLname" placeholder="Last"> <br>
+            <span id="M-name" class="u-m-name"></span>
+         </div>
+         <div class="sixth">
+            <label for="gen"> Gender*</label> <br><br>
+            <input type="radio" name="gender" id="gend" value="MALE">
+            <label for="male">M</label><br>
+            <input type="radio" name="gender" id="gend"value="FEMALE">
+            <label for="female">F</label><br>
+            <p id="Gen"></p>
+         </div>
+         <div class="seventh">
+            <label for="nat-name">Nationality*</label>
+            <input type="text" name="nationality"  id="nat-name"><br>
+            <span id="Nat-name" class="u-n-name"></span>
+         </div>
+         <div class="eighth">
+            <label for="add">Home Address*</label><br>
+            <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+            <input type="text" placeholder="Street Address" name="street" id="add"><br>
+            <span id="Address" class="u-address"></span>
+         </div>
+         <div class="nineth">
+            <input type="text" placeholder="City" name="city" id="city">
+            <!-- <input type="" placeholder="Country"> -->
+            <!-- <input type="text" placeholder="country"> -->
+            <select name="country" id="cn" name="country">
+               <option value="country">Country</option>
+               <option value="India">India</option>
+               <option value="Afganistan">Afganistan</option>
+               <option value="Nepal">Nepal</option>
+               <option value="China">China</option>
+            </select><br>
+            <span id="City" class="city"></span>
+         </div>
+         <div class="tenth">
+            <label for="phone"> Telephone-Home</label><br>
+            <input type="text" id="phone" name="Homephonenumber" placeholder="### ### ####"><br>
+            <p id="Userphone" ></p>
+         </div>
+
+         <div class="eleventh">
+            <label for="mob"> Telephone-Mobile* </label><br>
+            <input type="text" id="mob" name="Mobilenumber" placeholder="### ### ####"><br>
+            <p id="Usermob"></p>
+         </div>
+         <div class="next">
+            <center>
+             <input type="submit" value="submit" name="submit">
+              
+                  <a href="index2.html"> Next</a>
+               
+            </center>
+
+         </div>
+      </form>
+   </div>
+
+</body>
+
+</html>

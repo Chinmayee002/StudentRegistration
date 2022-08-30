@@ -1,0 +1,23 @@
+form {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif, sans-serif;
+    background-color: rgb(214, 235, 243);
+    padding: 7%;
+    width: 55%;
+    height: 60%;
+    border: none;
+    margin: 5% auto;
+    border-radius: 10px;
+}
+input{
+    width: 46%;
+    margin: 5px 0 22px 0;  
+    display: inline-block;
+    padding: 5px;  
+    /* border: none; */
+}
+div {  
+    padding: 10px 0;  
+ }  
+ p{
+    color: red;
+ }

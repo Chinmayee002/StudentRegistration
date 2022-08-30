@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIRD PAGE</title>
+    
+    <link rel="stylesheet" href="style3.css">
+    <script src="script3.js"></script>
+</head>
+<body>
+    <form action="register3" onsubmit="return validate()">
+        <label for="image">Recent passport size photograph</label>
+        <input type="file"  name="img" id="image" onchange="validate_fileupload(this.value);"><br>
+        <p id="img-err"></p>
+
+        <label for="H-mark">HSC mark sheet </label> 
+        <input type="file" name="hmarkfile" id="H-mark" onchange="validate_docfileupload(this.value);"><br>
+        <p id="err"></p>
+
+        <label for="S-mark">SSC mark sheet</label>
+        <input type="file" name="smarkfile" id="S-mark" onchange="validate_docfileupload(this.value);"><br>
+        <p id="err-1"></p>
+
+        <label for="All-mark">All semesters mark sheet in a single PDF or docs</label>  
+        <input type="file" id="All-mark" name="allmark" multiple onchange="validate_docfileupload(this.value);"><br>
+        <p id="err-2"></p>
+
+       <center>
+        
+         <input type="submit" id="sub" value="FINAL SUBMIT" name="submit">
+        </center>
+
+   
+</form>    
+</body>
+</html>
